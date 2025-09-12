@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications — Yishu Zhu</title>
+  <meta name="description" content="Peer-reviewed papers, preprints, manuscripts, and conference presentations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f7f9fc;--card:#fff;--ink:#0a2540;--muted:#5c6773;--accent:#0b6bcb;--border:#e6eef6}
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin:0 auto;padding:0 24px}
+    header{display:flex;align-items:center;gap:18px;padding:24px 0}
+    .brand h1{margin:0;font-size:clamp(24px,4vw,34px)} .brand p{margin:0;color:var(--muted)}
+    nav{display:flex;gap:12px;flex-wrap:wrap;padding:8px 0 18px;border-bottom:1px solid var(--border)}
+    nav a{padding:8px 10px;border-radius:10px} nav a[aria-current="page"]{background:#eaf3ff}
+    main{display:grid;gap:26px;margin:22px 0 64px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;box-shadow:0 10px 24px rgba(10,37,64,.06)}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+    .search{flex:1 1 280px;display:flex;gap:8px}
+    .search input{flex:1;border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:#fff}
+    .chip{border:1px solid var(--border);background:#fff;border-radius:999px;padding:8px 12px;font-size:13px;color:#083d77;cursor:pointer}
+    .chip[aria-pressed="true"]{background:#eaf3ff}
+    ol{margin:0;padding-left:22px} li{margin:10px 0}
+    .actions{display:inline-flex;gap:8px;margin-left:8px;flex-wrap:wrap}
+    .btn{border:1px solid var(--border);background:#fff;border-radius:10px;padding:3px 8px;font-size:12px;line-height:1.9}
+    .hint{font-size:12px;color:var(--muted);margin-top:8px}
+    h2{margin:0 0 12px;font-size:20px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1><a href="index.html" style="text-decoration:none;color:inherit">Yishu Zhu</a></h1>
+        <p>Department of Earth and Planetary Science • University of California, Berkeley</p>
+      </div>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html" aria-current="page">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="service.html">Service</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <section class="card">
+        <h2>Publications</h2>
+        <div class="controls" role="toolbar" aria-label="Filters">
+          <div class="search">
+            <input id="q" type="search" placeholder="Search title, author, journal…" aria-label="Search publications" />
+            <button class="btn" id="clear">Clear</button>
+          </div>
+          <button class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="journal">Journal</button>
+          <button class="chip" data-filter="preprint">Preprint</button>
+          <button class="chip" data-filter="manuscript">Manuscript</button>
+          <button class="chip" data-filter="talk">Talks</button>
+          <button class="chip" data-year="2025">2025</button>
+          <button class="chip" data-year="2024">2024</button>
+          <button class="chip" data-year="2019">2019</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Peer-reviewed journal articles</h2>
+        <ol id="list-journal">
+          <li data-type="journal" data-year="2025">Zhu, Y.; Patel, M. Y.; Winter, A. R.; <em>et al.</em> (2025). <strong>Observational Inferences of NOx and CO Emission Factors for Vehicles and Homes in the San Francisco Bay Area</strong>. <em>ACS ES&T Air</em>, 2(8), 1478–1487.
+            <span class="actions">
+              <a class="btn" href="#" target="_blank" rel="noopener">PDF</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">DOI</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Publisher</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+            </span>
+          </li>
+          <li data-type="journal" data-year="2025">Asimow, N. G.; Patel, M. Y.; <strong>Zhu, Y.</strong>; <em>et al.</em> (2025). <strong>Differences in regional home heating behavior in three U.S. Cities revealed by a ground-based sensor network</strong>. <em>Geophysical Research Letters</em>, 52, e2025GL115772.
+            <span class="actions"><a class="btn" href="#" target="_blank">PDF</a><a class="btn" href="#" target="_blank">DOI</a><a class="btn" href="#" target="_blank">Publisher</a><a class="btn" href="#" target="_blank">Code</a></span>
+          </li>
+          <li data-type="journal" data-year="2025">Winter, A. R.; <strong>Zhu, Y.</strong>; <em>et al.</em> (2025). <strong>A Scalable Calibration Method for Enhanced Accuracy in Dense Air Quality Monitoring Networks</strong>. <em>Environmental Science & Technology</em>, 59(5), 2599–2610.
+            <span class="actions"><a class="btn" href="#" target="_blank">PDF</a><a class="btn" href="#" target="_blank">DOI</a><a class="btn" href="#" target="_blank">Publisher</a><a class="btn" href="#" target="_blank">Code</a></span>
+          </li>
+          <li data-type="journal" data-year="2025">Winter, A. R.; <strong>Zhu, Y.</strong>; <em>et al.</em> (2025). <strong>Sustained Performance of Low-Cost Air Quality Sensors in Long-Term Deployments</strong>. <em>ACS Sensors</em>, 10(6), 4329–4335.
+            <span class="actions"><a class="btn" href="#" target="_blank">PDF</a><a class="btn" href="#" target="_blank">DOI</a><a class="btn" href="#" target="_blank">Publisher</a><a class="btn" href="#" target="_blank">Code</a></span>
+          </li>
+          <li data-type="journal" data-year="2025">Patel, M. Y.; <strong>Zhu, Y.</strong>; <em>et al.</em> (2025). <strong>Plume Detection and Emissions Quantification Potential Using a Dense Sensor Network</strong>. <em>ACS ES&T Air</em>, 2(6), 1099–1106.
+            <span class="actions"><a class="btn" href="#" target="_blank">PDF</a><a class="btn" href="#" target="_blank">DOI</a><a class="btn" href="#" target="_blank">Publisher</a><a class="btn" href="#" target="_blank">Code</a></span>
+          </li>
+          <li data-type="journal" data-year="2019"><strong>Zhu, Y.</strong>; Wu, Z.; Park, Y.; Fan, X.; <em>et al.</em> (2019). <strong>Measurements of atmospheric aerosol vertical distribution above the North China Plain using a hexacopter</strong>. <em>Science of The Total Environment</em>, 665, 1095–1102.
+            <span class="actions"><a class="btn" href="#" target="_blank">PDF</a><a class="btn" href="#" target="_blank">DOI</a><a class="btn" href="#" target="_blank">Publisher</a><a class="btn" href="#" target="_blank">Code</a></span>
+          </li>
+        </ol>
+        <p class="hint">Replace each # with your actual links (DOI, publisher page, repository/Zenodo, or PDFs you upload to this repo).</p>
+      </section>
+
+      <section class="card">
+        <h2>Preprints</h2>
+        <ol id="list-preprint">
+          <li data-type="preprint" data-year="2025">Man, R.; <strong>Zhu, Y.</strong>; <em>et al.</em> (2025). <strong>Direct observation of core-shell structure and water uptake of individual submicron urban aerosol particles</strong>. <em>EGUsphere</em> [preprint].
+            <span class="actions"><a class="btn" href="#" target="_blank">Preprint</a><a class="btn" href="#" target="_blank">DOI</a></span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>Manuscripts</h2>
+        <ol id="list-manuscript">
+          <li data-type="manuscript" data-year="2025"><strong>Zhu, Y.</strong>; Cohen, R. C.; <em>et al.</em> (2025). <strong>Cross-City Comparison of Residential NOx and CO Emission Factors Inferred from Dense Urban Observations</strong>. (Manuscript ready for submission to <em>Geophysical Research Letters</em>.)
+            <span class="actions"><a class="btn" href="#" target="_blank">Draft</a><a class="btn" href="#" target="_blank">Code</a></span>
+          </li>
+          <li data-type="manuscript" data-year="2025"><strong>Zhu, Y.</strong>; Cohen, R. C.; Ma, G.; <em>et al.</em> (2025). <strong>On the Sources of Methane to the San Francisco Bay Area Atmosphere</strong>. (Manuscript in preparation.)
+            <span class="actions"><a class="btn" href="#" target="_blank">Draft</a></span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>Conference presentations & invited talks</h2>
+        <ol id="list-talks">
+          <li data-type="talk" data-year="2025"><strong>EPA Emission Inventory Conference</strong> (2025). <em>[Talk title here]</em>. Location: [City, State].
+            <span class="actions"><a class="btn" href="#" target="_blank">Slides</a><a class="btn" href="#" target="_blank">Poster</a><a class="btn" href="#" target="_blank">Recording</a></span>
+          </li>
+          <li data-type="talk" data-year="2024"><strong>AGU Fall Meeting</strong> (2024). <em>[Talk/poster title here]</em>. New Orleans, LA.
+            <span class="actions"><a class="btn" href="#" target="_blank">S_
