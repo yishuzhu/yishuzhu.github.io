@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Academic Homepage</title>
+  <meta name="description" content="Your Name — research, publications, teaching, and contact information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0d12; --card:#10131a; --ink:#e8edf2; --muted:#a9b3c1; --accent:#5eb1ff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{max-width:980px;margin:40px auto 0;padding:0 24px;display:flex;gap:24px;align-items:center}
+    .avatar{width:108px;height:108px;border-radius:18px;object-fit:cover;border:1px solid #1f2733;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+    .hero h1{margin:0 0 6px;font-size:clamp(28px,4vw,40px);letter-spacing:.1px}
+    .hero p{margin:0;color:var(--muted)}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .badge{padding:6px 10px;border:1px solid #233044;border-radius:999px;color:var(--muted);font-size:12px}
+    nav{max-width:980px;margin:16px auto 0;padding:0 24px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:16px;flex-wrap:wrap}
+    nav a{display:block;padding:8px 10px;border-radius:10px}
+    main{max-width:980px;margin:28px auto 80px;padding:0 24px;display:grid;gap:26px}
+    section{background:var(--card);border:1px solid #1f2733;border-radius:16px;padding:18px 20px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+    h2{margin:0 0 10px;font-size:20px}
+    .grid{display:grid;gap:16px}
+    .pub li{margin:0 0 10px}
+    .item{display:flex;justify-content:space-between;gap:14px}
+    .item small{color:var(--muted)}
+    footer{max-width:980px;margin:0 auto 40px;padding:0 24px;color:var(--muted);text-align:center}
+    .button{display:inline-block;background:#162033;border:1px solid #233044;color:#cfe6ff;padding:10px 14px;border-radius:12px}
+    .button:hover{text-decoration:none;filter:brightness(1.05)}
+    @media (max-width:640px){.item{flex-direction:column}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "jobTitle": "Ph.D. Candidate",
+    "affiliation": {"@type":"Organization","name":"Your University"},
+    "url": "https://yourname.github.io/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=XXXX",
+      "https://orcid.org/0000-0000-0000-0000",
+      "https://www.linkedin.com/in/yourprofile/",
+      "https://github.com/yourname"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <img class="avatar" src="avatar.jpg" alt="Portrait of Your Name" />
+    <div class="hero">
+      <h1>Your Name</h1>
+      <p>Department • University • City, Country</p>
+      <div class="badges">
+        <span class="badge">Research: Urban emissions • Air quality • ML</span>
+        <span class="badge">Email: you@university.edu</span>
+        <span class="badge"><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></span>
+        <span class="badge"><a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a></span>
+        <span class="badge"><a href="CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></span>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a class="button" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="grid">
+      <h2>About</h2>
+      <p>Short bio (2–4 sentences). Focus on research interests, methods, and current projects. Example: I study neighborhood‑scale greenhouse‑gas and air‑pollution dynamics using dense sensor networks, statistical modeling, and emissions inventories.</p>
+    </section>
+
+    <section id="research" class="grid">
+      <h2>Research</h2>
+      <div class="item"><div>
+        <strong>Project A</strong> — one line summary of goals and methods.
+        <div><small>Collaborators, funding, preprint link if any</small></div>
+      </div><div><small>2024–present</small></div></div>
+      <div class="item"><div>
+        <strong>Project B</strong> — short description.
+      </div><div><small>2022–2024</small></div></div>
+    </section>
+
+    <section id="publications" class="grid pub">
+      <h2>Selected Publications</h2>
+      <ol>
+        <li><strong>Your Lastname</strong>, Coauthors (2025). Title of paper. <em>Journal</em>. <a href="#">PDF</a> · <a href="#">Code</a> · <a href="#">DOI</a></li>
+        <li><strong>Your Lastname</strong> (2024). Another one. <em>Venue</em>. <a href="#">PDF</a></li>
+      </ol>
+      <p><a href="publications.html">Full list →</a></p>
+    </section>
+
+    <section id="teaching" class="grid">
+      <h2>Teaching</h2>
+      <ul>
+        <li>Course / role — term — brief blurb of what you taught or achieved.</li>
+        <li>Guest lectures / workshops with materials linked.</li>
+      </ul>
+    </section>
+
+    <section id="service" class="grid">
+      <h2>Service & Outreach</h2>
+      <ul>
+        <li>Reviewer / organizer / mentoring roles, awards, invited talks.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="grid">
+      <h2>Contact</h2>
+      <p><strong>Email</strong>: you@university.edu · <strong>Office</strong>: Building / Room · <a href="https://www.linkedin.com/">LinkedIn</a> · <a href="https://github.com/">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© <span id="y"></span> Your Name. Built with GitHub Pages. · <a href="https://github.com">Source</a></small>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
