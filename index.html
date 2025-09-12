@@ -3,148 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yishu Zhu</title>
-  <meta name="description" content="Yishu Zhu — research, publications, teaching, awards, and contact information." />
+  <title>Yishu Zhu — Academic Homepage</title>
+  <meta name="description" content="Yishu Zhu — research, publications, teaching, and contact information." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      /* Light theme */
-      --bg:#f7f9fc; --card:#ffffff; --ink:#0a2540; --muted:#5c6773; --accent:#0b6bcb; --border:#e6eef6;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
+    :root{--bg:#f7f9fc;--card:#fff;--ink:#0a2540;--muted:#5c6773;--accent:#0b6bcb;--border:#e6eef6}
+    *{box-sizing:border-box} html,body{margin:0;padding:0}
     body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{max-width:1000px;margin:48px auto 0;padding:0 24px;display:flex;gap:28px;align-items:center}
-    .avatar{width:112px;height:112px;border-radius:20px;object-fit:cover;border:1px solid var(--border);box-shadow:0 6px 18px rgba(10,37,64,.08)}
-    .hero h1{margin:0 0 6px;font-size:clamp(28px,4vw,42px);letter-spacing:.1px}
-    .hero p{margin:0;color:var(--muted)}
-    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin:0 auto;padding:0 24px}
+    header{display:flex;align-items:center;gap:18px;padding:24px 0}
+    .brand h1{margin:0;font-size:clamp(24px,4vw,34px)} .brand p{margin:0;color:var(--muted)}
+    nav{display:flex;gap:12px;flex-wrap:wrap;padding:8px 0 18px;border-bottom:1px solid var(--border)}
+    nav a{padding:8px 10px;border-radius:10px} nav a[aria-current="page"]{background:#eaf3ff}
+    main{display:grid;gap:26px;margin:22px 0 64px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;box-shadow:0 10px 24px rgba(10,37,64,.06)}
+    .hero{display:flex;gap:24px;align-items:center;margin:6px 0}
+    .avatar{width:112px;height:112px;border-radius:20px;object-fit:cover;border:1px solid var(--border);box-shadow:0 6px 18px rgba(10,37,64,.06);background:#fff}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
     .badge{padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:12px;background:#fff}
-    nav{max-width:1000px;margin:18px auto 0;padding:0 24px}
-    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:16px;flex-wrap:wrap}
-    nav a{display:block;padding:8px 10px;border-radius:10px}
-    main{max-width:1000px;margin:30px auto 80px;padding:0 24px;display:grid;gap:26px}
-    section{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;box-shadow:0 10px 24px rgba(10,37,64,.06)}
     h2{margin:0 0 12px;font-size:20px}
-    .grid{display:grid;gap:16px}
-    .pub li{margin:0 0 10px}
-    .item{display:flex;justify-content:space-between;gap:14px}
-    .item small{color:var(--muted)}
-    footer{max-width:1000px;margin:0 auto 40px;padding:0 24px;color:var(--muted);text-align:center}
     .button{display:inline-block;background:#eaf3ff;border:1px solid var(--border);color:#083d77;padding:10px 14px;border-radius:12px}
-    .button:hover{text-decoration:none;filter:brightness(1.03)}
-    @media (max-width:640px){.item{flex-direction:column}}
+    footer{color:var(--muted);text-align:center;padding:24px 0 40px;border-top:1px solid var(--border)}
   </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Yishu Zhu",
-    "jobTitle": "Ph.D. Candidate",
-    "affiliation": {"@type":"Organization","name":"University of California, Berkeley"},
-    "url": "https://yishuzhu.github.io/",
-    "sameAs": [
-      "https://scholar.google.com/citations?user=dFUR9sEAAAAJ",
-      "https://orcid.org/0000-0001-9293-1977",
-      "https://www.linkedin.com/in/yishu-zhu/",
-      "https://github.com/yishuzhu"
-    ]
-  }
+  {"@context":"https://schema.org","@type":"Person","name":"Yishu Zhu","jobTitle":"Ph.D. Candidate","affiliation":{"@type":"Organization","name":"University of California, Berkeley"},"url":"https://yishuzhu.github.io/","sameAs":["https://scholar.google.com/citations?user=dFUR9sEAAAAJ","https://orcid.org/0000-0001-9293-1977","https://www.linkedin.com/in/yishu-zhu/","https://github.com/yishuzhu"]}
   </script>
 </head>
 <body>
-  <header>
-    <img class="avatar" src="prp.jpg" alt="Portrait of Yishu Zhu" />
-    <div class="hero">
-      <h1>Yishu Zhu</h1>
-      <p>Department of Earth and Planetary Science • University of California, Berkeley</p>
-      <div class="badges">
-        <span class="badge">Urban emissions • Air quality • Climate Adaptation</span>
-        <span class="badge"><a href="mailto:sarahings@berkeley.edu">sarahings@berkeley.edu</a></span>
-        <span class="badge"><a href="https://scholar.google.com/citations?user=dFUR9sEAAAAJ" target="_blank" rel="noopener">Google Scholar</a></span>
-        <span class="badge"><a href="https://orcid.org/0000-0001-9293-1977" target="_blank" rel="noopener">ORCID</a></span>
-        <span class="badge"><a href="CV2025_Yishu%20Zhu.pdf" target="_blank" rel="noopener">CV (PDF)</a></span>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1><a href="index.html" style="text-decoration:none;color:inherit">Yishu Zhu</a></h1>
+        <p>Department of Earth and Planetary Science • University of California, Berkeley</p>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#service">Service</a></li>
-      <li><a class="button" href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="service.html">Service</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-  <main>
-    <section id="about" class="grid">
-      <h2>About</h2>
-      <p>I study neighborhood‑scale greenhouse gases and air pollutants in cities using dense stationary sensor networks, statistical modeling, and emissions inventories. My work develops calibration methods for long‑term sensor deployments and uses enhancement ratios (e.g., ΔNOx/ΔCO₂, ΔCO/ΔCO₂, ΔCH₄/ΔCO₂) to infer sectoral emission factors for transportation and residential energy use across multiple U.S. cities.</p>
-    </section>
+    <main>
+      <section class="card">
+        <div class="hero">
+          <img class="avatar" src="prp.jpg" alt="Portrait of Yishu Zhu" />
+          <div>
+            <h2>Welcome</h2>
+            <p>I study neighborhood-scale greenhouse gases and air pollutants in cities using dense stationary sensor networks, statistical modeling, and emissions inventories. My work develops calibration methods for long-term sensor deployments and uses enhancement ratios (ΔNOx/ΔCO₂, ΔCO/ΔCO₂, ΔCH₄/ΔCO₂) to infer sectoral emission factors across multiple U.S. cities.</p>
+            <div class="badges">
+              <span class="badge">Urban emissions</span>
+              <span class="badge">Air quality</span>
+              <span class="badge">Sensor networks</span>
+              <span class="badge"><a href="mailto:sarahings@berkeley.edu">sarahings@berkeley.edu</a></span>
+              <span class="badge"><a href="https://orcid.org/0000-0001-9293-1977" target="_blank" rel="noopener">ORCID</a></span>
+              <span class="badge"><a href="https://github.com/yishuzhu" target="_blank" rel="noopener">GitHub</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="research" class="grid">
-      <h2>Research</h2>
-      <div class="item"><div>
-        <strong>Neighborhood‑scale urban emissions mapping</strong> — Deriving sectoral emission factors and city maps from BEACO₂N‑like networks; integrating advection–diffusion modeling and GIS.
-        <div><small>2021–present</small></div>
-      </div><div><small>Berkeley</small></div></div>
-      <div class="item"><div>
-        <strong>Urban methane sources</strong> — Estimating ΔCH₄/ΔCO₂ from long‑term ground and tall‑tower measurements to constrain natural‑gas‑related emissions.
-      </div><div><small>2024–present</small></div></div>
-      <div class="item"><div>
-        <strong>Sensor calibration and network stability</strong> — Robust multivariable calibration frameworks for low‑cost sensors in long deployments.
-      </div><div><small>2022–2025</small></div></div>
-    </section>
+      <section class="card">
+        <h2>Quick links</h2>
+        <p><a class="button" href="publications.html">Publications</a> &nbsp; <a class="button" href="research.html">Research</a> &nbsp; <a class="button" href="teaching.html">Teaching</a> &nbsp; <a class="button" href="CV2025_Yishu%20Zhu.pdf" target="_blank" rel="noopener">CV (PDF)</a></p>
+      </section>
+    </main>
 
-    <section id="publications" class="grid pub">
-      <h2>Selected Publications</h2>
-      <ol>
-        <li>Zhu, Y.; Patel, M. Y.; Winter, A. R.; <em>et al.</em> (2025). Observational Inferences of NOx and CO Emission Factors for Vehicles and Homes in the San Francisco Bay Area. <em>ACS ES&T Air</em> 2(8), 1478–1487. <a href="https://scholar.google.com/citations?user=dFUR9sEAAAAJ" target="_blank" rel="noopener">More</a></li>
-        <li>Asimow, N. G.; Patel, M. Y.; <strong>Zhu, Y.</strong>; <em>et al.</em> (2025). Differences in regional home heating behavior in three U.S. Cities. <em>Geophysical Research Letters</em> 52, e2025GL115772.</li>
-        <li>Winter, A. R.; <strong>Zhu, Y.</strong>; <em>et al.</em> (2025). A Scalable Calibration Method for Enhanced Accuracy in Dense Air Quality Monitoring Networks. <em>Environmental Science & Technology</em> 59(5), 2599–2610.</li>
-        <li>Patel, M. Y.; <strong>Zhu, Y.</strong>; <em>et al.</em> (2025). Plume Detection and Emissions Quantification Potential Using a Dense Sensor Network. <em>ACS ES&T Air</em> 2(6), 1099–1106.</li>
-        <li><strong>Zhu, Y.</strong>; Wu, Z.; Park, Y.; Fan, X.; <em>et al.</em> (2019). Measurements of atmospheric aerosol vertical distribution above the North China Plain using a hexacopter. <em>Science of The Total Environment</em> 665, 1095–1102.</li>
-      </ol>
-      <p><a href="https://scholar.google.com/citations?user=dFUR9sEAAAAJ" target="_blank" rel="noopener">Full list on Google Scholar →</a></p>
-    </section>
-
-    <section id="teaching" class="grid">
-      <h2>Teaching</h2>
-      <ul>
-        <li>Graduate Student Instructor — General Chemistry & Quantitative Analysis (Spring 2023, 2024, 2025)</li>
-        <li>Teaching Assistant — Environmental Monitoring Experiments (2019 Spring)</li>
-        <li>Teaching Assistant — Aerosol Measurement Principles, Techniques, and Applications (2018 Fall)</li>
-      </ul>
-    </section>
-
-    <section id="service" class="grid">
-      <h2>Service & Outreach</h2>
-      <ul>
-        <li>Organizer, Scientists for Knowledge of Atmospheric invERSions (SKATERS) (2024–present)</li>
-        <li>Co‑chair, AGU session on low‑cost air quality sensors (2025)</li>
-        <li>Mentorship (undergraduate research); STEM outreach (POWER‑Bay Area); Instructor, Intro to Air Quality & Climate (Fremont High School, 2022)</li>
-        <li>Advocacy: Congressional visits to CA & HI senators’ offices for climate education and adaptation (2024)</li>
-        <li>Event Planner, TEDx Berkeley (2021–2022)</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="grid">
-      <h2>Contact</h2>
-      <p><strong>Email</strong>: <a href="mailto:sarahings@berkeley.edu">sarahings@berkeley.edu</a> · <a href="https://www.linkedin.com/in/yishu-zhu/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/yishuzhu" target="_blank" rel="noopener">GitHub</a></p>
-      <p><small>Office: B70A Hildebrand Hall, University of California, Berkeley, CA 94720</small></p>
-    </section>
-  </main>
-
-  <footer>
-    <small>© <span id="y"></span> Yishu Zhu. Built with GitHub Pages. · <a href="https://github.com/yishuzhu/yishuzhu.github.io" target="_blank" rel="noopener">Source</a></small>
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    <footer>
+      © <span id="y"></span> Yishu Zhu · <a href="https://scholar.google.com/citations?user=dFUR9sEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
