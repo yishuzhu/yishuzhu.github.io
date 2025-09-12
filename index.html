@@ -9,23 +9,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#f7f9fc;--card:#fff;--ink:#0a2540;--muted:#5c6773;--accent:#0b6bcb;--border:#e6eef6}
+    :root{--bg:#f7f9fc;--card:#ffffff;--ink:#0a2540;--muted:#5c6773;--accent:#0b6bcb;--border:#e6eef6}
     *{box-sizing:border-box} html,body{margin:0;padding:0}
     body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
     a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     .container{max-width:1000px;margin:0 auto;padding:0 24px}
+
+    /* Header & nav */
     header{display:flex;align-items:center;gap:18px;padding:24px 0}
-    .brand h1{margin:0;font-size:clamp(24px,4vw,34px)} .brand p{margin:0;color:var(--muted)}
+    .brand h1{margin:0;font-size:clamp(24px,4vw,34px)}
+    .brand p{margin:0;color:var(--muted)}
     nav{display:flex;gap:12px;flex-wrap:wrap;padding:8px 0 18px;border-bottom:1px solid var(--border)}
-    nav a{padding:8px 10px;border-radius:10px} nav a[aria-current="page"]{background:#eaf3ff}
+    nav a{padding:8px 10px;border-radius:10px}
+    nav a[aria-current="page"]{background:#eaf3ff}
+
+    /* Banner */
+    .banner{margin:12px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--border);box-shadow:0 10px 24px rgba(10,37,64,.06);background:#e8eef6}
+    .banner img{display:block;width:100%;height:280px;object-fit:cover}
+    @media (min-width:900px){ .banner img{height:340px} }
+    .banner figcaption{padding:8px 12px;font-size:12px;color:var(--muted);background:#fff;border-top:1px solid var(--border)}
+
+    /* Main */
     main{display:grid;gap:26px;margin:22px 0 64px}
     .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px;box-shadow:0 10px 24px rgba(10,37,64,.06)}
-    .hero{display:flex;gap:24px;align-items:center;margin:6px 0}
-    .avatar{width:112px;height:112px;border-radius:20px;object-fit:cover;border:1px solid var(--border);box-shadow:0 6px 18px rgba(10,37,64,.06);background:#fff}
+    h2{margin:0 0 12px;font-size:20px}
+
     .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
     .badge{padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:12px;background:#fff}
-    h2{margin:0 0 12px;font-size:20px}
-    .button{display:inline-block;background:#eaf3ff;border:1px solid var(--border);color:#083d77;padding:10px 14px;border-radius:12px}
+
+    /* Footer */
     footer{color:var(--muted);text-align:center;padding:24px 0 40px;border-top:1px solid var(--border)}
   </style>
   <script type="application/ld+json">
@@ -43,7 +55,6 @@
 
     <nav>
       <a href="index.html" aria-current="page">Home</a>
-      <a href="about.html">About</a>
       <a href="research.html">Research</a>
       <a href="publications.html">Publications</a>
       <a href="teaching.html">Teaching</a>
@@ -51,33 +62,32 @@
       <a href="contact.html">Contact</a>
     </nav>
 
+    <!-- Banner image -->
+    <figure class="banner">
+      <img src="home_banner.jpg" alt="Wide banner related to urban atmosphere and research" />
+      <!-- Optional caption (delete if not needed):
+      <figcaption>San Francisco Bay Area – BEACO₂N network domain</figcaption> -->
+    </figure>
+
     <main>
       <section class="card">
-        <div class="hero">
-          <img class="avatar" src="prp.jpg" alt="Portrait of Yishu Zhu" />
-          <div>
-            <h2>Welcome</h2>
-            <p>I study neighborhood-scale greenhouse gases and air pollutants in cities using dense stationary sensor networks, statistical modeling, and emissions inventories. My work develops calibration methods for long-term sensor deployments and uses enhancement ratios (ΔNOx/ΔCO₂, ΔCO/ΔCO₂, ΔCH₄/ΔCO₂) to infer sectoral emission factors across multiple U.S. cities.</p>
-            <div class="badges">
-              <span class="badge">Urban emissions</span>
-              <span class="badge">Air quality</span>
-              <span class="badge">Sensor networks</span>
-              <span class="badge"><a href="mailto:sarahings@berkeley.edu">sarahings@berkeley.edu</a></span>
-              <span class="badge"><a href="https://orcid.org/0000-0001-9293-1977" target="_blank" rel="noopener">ORCID</a></span>
-              <span class="badge"><a href="https://github.com/yishuzhu" target="_blank" rel="noopener">GitHub</a></span>
-            </div>
-          </div>
+        <h2>Welcome</h2>
+        <p>I study neighborhood-scale greenhouse gases and air pollutants in cities using dense stationary sensor networks, statistical modeling, and emissions inventories. My work develops calibration methods for long-term sensor deployments and uses enhancement ratios (ΔNOx/ΔCO₂, ΔCO/ΔCO₂, ΔCH₄/ΔCO₂) to infer sectoral emission factors across multiple U.S. cities.</p>
+        <div class="badges">
+          <span class="badge">Urban emissions</span>
+          <span class="badge">Air quality</span>
+          <span class="badge">Sensor networks</span>
+          <span class="badge"><a href="mailto:sarahings@berkeley.edu">sarahings@berkeley.edu</a></span>
+          <span class="badge"><a href="https://orcid.org/0000-0001-9293-1977" target="_blank" rel="noopener">ORCID</a></span>
+          <span class="badge"><a href="https://github.com/yishuzhu" target="_blank" rel="noopener">GitHub</a></span>
         </div>
       </section>
-
-      <section class="card">
-        <h2>Quick links</h2>
-        <p><a class="button" href="publications.html">Publications</a> &nbsp; <a class="button" href="research.html">Research</a> &nbsp; <a class="button" href="teaching.html">Teaching</a> &nbsp; <a class="button" href="CV2025_Yishu%20Zhu.pdf" target="_blank" rel="noopener">CV (PDF)</a></p>
-      </section>
+      <!-- Quick links section removed as requested -->
     </main>
 
     <footer>
-      © <span id="y"></span> Yishu Zhu · <a href="https://scholar.google.com/citations?user=dFUR9sEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      © <span id="y"></span> Yishu Zhu · <a href="https://scholar.google.com/citations?user=dFUR9sEAAAAJ" target="_blank" rel="noopener">Google Scholar</a> ·
+      <a href="CV2025_Yishu%20Zhu.pdf" target="_blank" rel="noopener">CV (PDF)</a>
     </footer>
   </div>
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
