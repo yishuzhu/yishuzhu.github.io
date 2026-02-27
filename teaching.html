@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching — Yishu Zhu</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    main { display: grid; gap: 28px; margin: 0 0 48px; }
+    .page-title { margin-top: 24px; }
+    .teaching-list { display: grid; gap: 18px; list-style: none; margin: 0; padding: 0; }
+    .teaching-list li {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 20px 22px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .teaching-list li:hover { border-color: rgba(102,165,237,0.4); box-shadow: var(--shadow-hover); }
+    .teaching-list .icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(102,165,237,0.2), rgba(119,88,163,0.15));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .teaching-list .role { font-weight: 600; color: var(--secondary); margin-bottom: 4px; }
+    .teaching-list .course { color: var(--ink); }
+    .teaching-list .term { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <div class="accent-bar"></div>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Yishu Zhu</h1>
+        <p>Department of Earth and Planetary Science • University of California, Berkeley</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="teaching.html" aria-current="page">Teaching</a>
+        <a href="service.html">Outreach &amp; Service</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">Teaching</h1>
+
+      <section class="card">
+        <h2>Courses</h2>
+        <ul class="teaching-list">
+          <li>
+            <span class="icon" aria-hidden="true">📚</span>
+            <div>
+              <div class="role">Graduate Student Instructor</div>
+              <div class="course">General Chemistry &amp; Quantitative Analysis</div>
+              <div class="term">Spring 2023, 2024, 2025</div>
+            </div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">🔬</span>
+            <div>
+              <div class="role">Teaching Assistant</div>
+              <div class="course">Environmental Monitoring Experiments</div>
+              <div class="term">Spring 2019</div>
+            </div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">🌫️</span>
+            <div>
+              <div class="role">Teaching Assistant</div>
+              <div class="course">Aerosol Measurement Principles, Techniques, and Applications</div>
+              <div class="term">Fall 2018</div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Yishu Zhu
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
